@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Stock Exzy</title>
+
+    <link rel="shortcut icon" href="images/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles/set-style.css" type="text/css" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="styles/responsive.css" type="text/css" />
+
+    <meta name="robots" content="index, follow" />
+    <!-- <meta name="description" content="" /> -->
+    <meta name="keywords" content="stock exchange, Exzy, exchange" />
+    <meta name="author" content="DrawLight Design" />
+
+    <meta property="og:title" content="Stock Exzy" />
+    <!-- <meta property="og:type" content="" /> -->
+    <!-- <meta property="og:description" content="" /> -->
+    <!-- <meta property="og:url" content="" /> -->
+    <!-- <meta property="og:image" content=""> -->
+    <!-- <meta property="og:image:type" content="image/jpeg"> -->
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Stock Exzy" />
+    <!-- <meta name="twitter:description" content="" /> -->
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="logo" id="logo" />
+    </header>
+    <div id="sidebar-left"></div>
+    <div id="content">
+        <div id="content-top-field">
+            <div id="current-quote-content">
+                <h1 id="coin-title"></h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Low</th>
+                            <th>High</th>
+                            <th>Bid</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="current-quote-return"></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2>Last 7 days</h2>
+            <div id="period-quotation-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Low</th>
+                            <th>High</th>
+                            <th>Bid</th>
+                        </tr>
+                    </thead>
+                    <tbody id="period-quote-return">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="content-bottom-field">
+            <h2>Select Period</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Low</th>
+                        <th>High</th>
+                        <th>Bid</th>
+                    </tr>
+                </thead>
+                <tbody id="selected-period-quote-return">
+                </tbody>
+            </table>
+            <span id="error-return"></span>
+        </div>
+    </div>
+    <div id="sidebar-right">
+        <div class="first-option content-options">
+            <div class="content-selector">
+                <label for="coin-selector" class="label-coin">Choose a coin</label>
+                <select name="coin-selector" id="coin-selector">
+                    <option value="USD-BRL" entry="USDBRL">USD-BRL</option>
+                    <option value="EUR-BRL" entry="EURBRL">EUR-BRL</option>
+                    <option value="BTC-BRL" entry="BTCBRL">BTC-BRL</option>
+                </select>
+            </div>
+            <button type="button" id="get-currency-quote" class="main-button">Get Currency Quote</button>
+            <span>Get the quote for the selected currency in the last 7 days</span>
+        </div>
+        <div class="second-option content-options">
+            <div class="content-date">
+                <label for="initial-date" class="label-date">Initial Date</label>
+                <input type="date" id="initial-date" class="input-date" />
+            </div>
+            <div class="content-date">
+                <label for="final-date" class="label-date">Final Date</label>
+                <input type="date" id="final-date" class="input-date" />
+            </div>
+            <button type="button" id="get-period" class="main-button">Get Period</button>
+            <span>Get the quote for the requested period</span>
+        </div>
+
+        <span class="copyright">&copy; 2021 DrawLight</span>
+
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="scripts/script.js" type="text/javascript"></script>
+
+</html>

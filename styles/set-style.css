@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@200&display=swap');
+:root {
+    --bright-color: #2f3342;
+    --medium-bright-color: #282d3a;
+    --medium-color: ;
+    --medium-dark-color: #282d3a;
+    --dark-color: #1d1e22;
+    --border: #383c44;
+    --inputs: #d8c9c6;
+    --inputs: #2f3342;
+    --font: #bbbeC9;
+    --main-button: #dd5239;
+    --input-font: #c59086;
+}
+
+button.main-button {
+    width: 100%;
+    background: var(--main-button);
+    box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.082) inset;
+    border: 1px solid #8b3424;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button.main-button:hover {
+    background: #fa7d67;
+    transition: 0.5s;
+}
+button.main-button:active {
+    background:#fc9785;
+    box-shadow: unset;
+    transition: unset;
+}
+table {
+    width: 70%;
+    text-align: center;
+}
+th, td {
+    padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.055);
+}

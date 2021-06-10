@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html, body, #content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, var(--medium-bright-color), var(--dark-color));
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--font);
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    padding: 0 25px;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+}
+img#logo {
+    height: 70%;
+}
+div#sidebar-left {
+    width: 5%;
+    height: 90%;
+    display: flex;
+    background: var(--medium-bright-color);
+}
+div#content {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    background: var(--bright-color);
+}
+#content-top-field {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border);
+}
+#current-quote-content { 
+    width: 100%;
+    height: 35%;  
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+h1, h2 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: var(--input-font);
+}
+th {
+    background: var(--bright-color);
+}
+#period-quotation-content {   
+    width: 100%;
+    height: 65%;  
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+#content-bottom-field {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#error-return {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    overflow: auto;
+}
+div#sidebar-right {
+    width: 15%;
+    height: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--dark-color);
+}
+div#sidebar-right label {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #373d49;
+}
+.content-options {
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    background: #3a435e21;
+}
+.first-option {
+    height: 40%;
+    justify-content: space-between;
+}
+.first-option .content-selector {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.first-option label {
+    height: 35%;
+}
+select#coin-selector {
+    width: 100%;
+    height: 65%;
+    border: 1px solid var(--border);
+    border-radius: 0 0 10px 10px;
+    background-color: var(--inputs);
+    outline: unset;
+    color: var(--input-font);
+}
+button#get-currency-quote {
+    height: 20%;
+}
+.first-option span {
+    text-align: center;
+    height: 30%;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.425);
+}
+.second-option {
+    height: 50%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.second-option .content-date {
+    width: 100%;
+    height: 27%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.content-date .label-date {
+    height: 35%;
+}
+.content-date input {
+    width: 100%;
+    height: 65%;
+    padding-left: 5px;
+    border: 1px solid var(--border);
+    border-radius: 0 0 10px 10px;
+    background-color: var(--inputs);
+    font-size: 16px;
+    color: var(--input-font);
+}
+button#get-period {
+    height: 15%;
+}
+.second-option span {
+    height: 15%;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.425);
+}
+.copyright {
+    width: 50%;
+    height: 3%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    /* border-bottom: 4px solid rgb(135,31,40);
+    box-shadow: 4px -4px 0 0px rgba(39, 77, 135);
+    border-left: 4px solid rgb(135,31,40); */
+}
