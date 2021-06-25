@@ -2,7 +2,7 @@
 
 ## 💻 Project
 
-Page developed in jQuery in the fourth month of the course.
+Page developed in jQuery in the fourth month of the course to apply API concepts
                                                           
 <p>
   This project was developed with the following technologies: 
